@@ -17,7 +17,7 @@
   animation: change 10s infinite ease-in-out;
 }
 
-@keyframes change{
+/* @keyframes change{
   0%
   {
     background-image:linear-gradient(to bottom, #000000, transparent), url(Images/pexels-mark-stebnicki-2889442.jpg);
@@ -26,7 +26,7 @@
   {
     background-image:linear-gradient(to bottom, #000000, transparent), url(Images/jjames-baltz-Tqj_QNfi0ig-unsplash.jpg);
   } 
-}
+} */
 
 .contact-info{
   display: flex;
@@ -163,3 +163,148 @@ button {
   font-weight: 400;
   padding: 10px 30px;
 }
+
+/* Services section */
+.service-container{
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f9f6f6;
+}
+
+.service-wrapper{
+  padding: 3% 8%;
+}
+
+.service{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-family: "Lato", sans-serif;
+  color: #147A12;
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.service p{
+  font-family: "Open Sans", sans-serif;
+  color: #011C00;
+  width: 60%;
+  text-align: center;
+}
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 42px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 350px;
+  width: 350px;
+  background-color: #f9f6f6;
+  padding: 3% 8%;
+  border-radius: 15px;
+  box-shadow: 0px 0px 5px 0px rgba(35, 35, 35, 0.20);
+  transition: 0.6s;
+}
+
+.card i{
+  color: #147A12;
+  font-size: 40px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.card h2{
+  font-family: "Lato", sans-serif;
+  color: #012101;
+  text-align: center;
+  margin: 8px 0;
+  font-size: 20px;
+  font-weight:  bold;
+}
+
+.card p{
+  font-family: "Open Sans", sans-serif;
+  color: #011C00;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.card a{
+  color: #147A12;
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: "Open Sans", sans-serif;
+}
+
+.card:hover{
+  background: #032A02;
+  color: #f9f6f6;
+  transform: translateY(-8px);
+}
+
+.card:hover h2{
+  color: #f9f6f6;
+}
+
+.card:hover p{
+  color: #f9f6f6;
+}
+
+.card:hover a{
+  color: #f9f6f6;
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  h1{
+    font-size: 2rem;
+  }
+}
+
+@media (max-width:768px) {
+  h1{
+    font-size: 2rem;
+  }
+  p{
+    width: 90%;
+  }
+}
+
+@media (max-width:500px){
+  .card{
+    height: 350px;
+  width: 300px;
+  }
+  .card i{
+    margin-top: 20px;
+  }
+  h2{
+    margin-bottom: 6px;
+    font-size: 16px;
+  }
+  p{
+    width: 100%;
+  }
+}
+
+/* Projects section */
